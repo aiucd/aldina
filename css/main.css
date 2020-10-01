@@ -1,0 +1,191 @@
+body {
+  font-family: 'Oswald', serif;
+  font-size: 48px;
+}
+
+p {
+  font-family: Open Sans;
+  font-size: 14px !important;
+  text-align: justify;
+}
+
+.nav-link {
+  font-size: 30px;
+  color: #738796 !important;
+}
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.top-nav-collapse {
+  background-color: black !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
+}
+
+.frontpage {
+  /* The image used */
+  background-image: url("../images/background.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frontpage .title {
+  margin: 2em 100px 0em 100px;
+  text-align: center;
+  color: #585f7f;
+  font-size: 3em;
+  border-bottom: 20px solid #738796;
+}
+
+.frontpage .subtitle {
+  margin-top: 0.5em;
+  text-align: center;
+  color: #585f7f;
+  font-size: 40px;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 500px) {
+  .frontpage .title {
+    float: none;
+    display: block;
+    font-size: 1em;
+    margin-top: 3em;
+  }
+
+  .frontpage .subtitle {
+    margin-top: 0.5em;
+    text-align: center;
+    color: #585f7f;
+    font-size: 20px;
+    font-family: "Open Sans";
+  }
+}
+
+.min-frontpage {
+  /* The image used */
+  background-image: url("../images/background.jpeg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 106px;
+}
+
+.presentazione {
+  background-color: #white;
+  height: 100%;
+}
+
+.presentazione .title {
+  margin-top: 1em;
+  text-align: center;
+  color: #738796;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.presentazione .subtitle {
+  margin-top: 0.8em;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #738796;
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-size: 25px;
+}
+
+.presentazione .body {
+  margin-top: 0.8em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 0.8em;
+}
+
+@media screen and (max-width: 500px) {
+  .presentazione {
+    font-size: 0.8em;
+  }
+}
+
+.comitato {
+  background-color: #dae1e7;
+  height: 100%;
+}
+
+.comitato .title {
+  margin-top: 1em;
+  text-align: center;
+  color: #48586f;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.comitato .subtitle {
+  margin-top: 0.8em;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #48586f;
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-size: 25px;
+}
+
+.comitato .body {
+  margin-top: 0.8em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 0.8em;
+}
+
+
+@media screen and (max-width: 500px) {
+  .pubblicazioni
+   {
+    font-size: 0.8em;
+  }
+}
+
+footer {
+  padding: 1em;
+  font-size: 20px;
+  color: #dddddd;
+
+  text-align: center;
+
+  /* The image used */
+  background-image: url("../images/background.jpeg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer a {
+  color: #738796;
+}
+
+.seminars a {
+  color: #c00;
+}
+
+footer p {
+  text-align: center;
+}

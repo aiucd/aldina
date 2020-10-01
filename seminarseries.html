@@ -1,0 +1,114 @@
+---
+layout: default
+---
+    <header>
+
+      {% include navbar.html %}
+
+      <!-- Front page -->
+      <div class="min-frontpage">
+      </div>
+    </header>
+
+    <main>
+      <a id="seminars"></a>
+      <div class="seminars">
+        <!-- Seminars cycles -->
+        <div class="container">
+
+          <div class="row">
+            <div>Seminars in Digital and Public Humanities</div>
+          </div>
+          <div class="row">
+            <h4>Seminars 2020/2021</h4>
+          </div>
+          <div class="row">
+            <p style="font-size: 14px !important;"><em>Seminars in Digital and Public Humanities</em> are organized by VeDPH and thought as an opportunity to present research projects related to Digital and Public Humanities. Started in October 2019 as seminars in presence, since the end of February 2020, because of the COVID-19 emergency,have been online events for our community. Every event is recorded and published in our <a href="https://www.youtube.com/channel/UCpVTd9npww6UwFQti5yu4NQ">YouTube channel</a>.<br/>Seminars will be held on Zoom.</p>
+          </div>
+          <div class="row">
+            <div class="col-sm carousel">
+              <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                <div id="carousel-content" class="carousel-inner"></div>
+                <script src="js/seminars.js"></script>
+                <script>
+                  const carousel = document.getElementById("carousel-content");
+
+                  const now = new Date();
+                  const year = now.getFullYear();
+                  let month = now.getMonth() + 1;
+                  if (month < 10) month = "0" + month;
+                  let day = now.getUTCDate();
+                  if (day < 10) day = "0" + day;
+
+                  // date is something like: 20200910
+                  const date = parseInt("" + year + month + day, 10);
+
+                  // we must set 'active' to the first one only. This variable is used to identify when the first one has been added.
+                  let activefound = false;
+                  let linkId = 0;
+
+                  seminars.forEach((seminar, id) => {
+                    if (seminar.datelimit < date) return;
+
+                    const div = document.createElement("div");
+                    div.setAttribute("class", "carousel-item carousel-item-seminarseries" + (!activefound ? " active" : ""));
+                    activefound = true;
+
+                    const content = document.createElement("div");
+                    content.setAttribute("class", "carousel-caption d-none d-md-block");
+                    div.appendChild(content);
+
+                    const when = document.createElement("h3");
+                    when.innerText = seminar.date;
+                    content.appendChild(when);
+
+                    const who = document.createElement("h2");
+                    who.innerText = seminar.who;
+                    content.appendChild(who);
+
+                    const from = document.createElement("h5");
+                    from.innerText = seminar.from;
+                    content.appendChild(from);
+
+                    const title = document.createElement("h4");
+                    content.appendChild(title);
+
+                    const link = document.createElement("a");
+                    link.innerText = seminar.title;
+                    link.setAttribute('href', `#link${linkId++}`);
+                    title.appendChild(link);
+
+                    carousel.appendChild(div);
+                  });
+                </script>
+                <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <script>
+            linkId = 0;
+            seminars.forEach(seminar => {
+              document.write(`
+              <div class="card card-seminar">
+                 <a id="link${linkId++}"/>
+                 <div class="card-body">
+                   <h5>⏰ ${seminar.date}</h5>
+                   <h4>${seminar.who}</h4>
+                   <h6>(${seminar.from})</h6>
+                   <h5><em>${seminar.title}</em></h5>
+                   <p>${seminar.abstract || ""}</p>
+                </div>
+              </div>
+              `);
+            });
+          </script>
+        </div>
+      </div>
+    </main>
