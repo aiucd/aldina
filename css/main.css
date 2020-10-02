@@ -11,19 +11,10 @@ p {
 
 .nav-link {
   font-size: 30px;
-  color: #738796 !important;
 }
 
 .btn .fa {
   margin-left: 3px;
-}
-
-.top-nav-collapse {
-  background-color: black !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
 }
 
 .navbar {
@@ -59,7 +50,22 @@ p {
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 500px) {
+@media all and (min-width: 500px) {
+    .top-nav-collapse {
+      background-color: #585f7f;
+      color: ##738796 !important;
+    }
+
+    .nav-link:not(.top-nav-collapse) {
+      color: #585f7f !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+}
+
+@media all and (max-width: 500px) {
   .frontpage .title {
     float: none;
     display: block;
@@ -73,6 +79,10 @@ p {
     color: #585f7f;
     font-size: 20px;
     font-family: "Open Sans";
+  }
+
+  .navbar {
+    background-color: #585f7f !important;
   }
 }
 
@@ -118,10 +128,14 @@ p {
   margin-bottom: 0.8em;
 }
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
   .presentazione {
     font-size: 0.8em;
   }
+   .presentazione .body {
+     margin-left: 1.5em;
+     margin-right: 1.5em;
+   }
 }
 
 .comitato {
@@ -155,10 +169,14 @@ p {
 }
 
 
-@media screen and (max-width: 500px) {
-  .pubblicazioni
-   {
+@media all and (max-width: 500px) {
+  .pubblicazioni {
     font-size: 0.8em;
+  }
+
+  .comitato .body {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 }
 
