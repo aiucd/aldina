@@ -35,7 +35,7 @@ p {
 }
 
 .frontpage .title {
-  margin: 2em 100px 0em 100px;
+  margin: 0.5em 100px 0em 100px;
   text-align: center;
   color: #585f7f;
   font-size: 3em;
@@ -207,3 +207,4 @@ footer a {
 footer p {
   text-align: center;
 }
+
