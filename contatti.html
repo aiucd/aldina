@@ -139,34 +139,44 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-   <!-- Custom JavaScript -->
+  <!-- Custom JavaScript -->
   <script>
     document.querySelector('.php-email-form').addEventListener('submit', function(event) {
-      event.preventDefault();
+      event.preventDefault();  // Prevent the default form submission
 
-      // Show loading message
-      document.querySelector('.loading').style.display = 'block';
+      const form = this;
+      const loadingMessage = document.querySelector('.loading');
+      const errorMessage = document.querySelector('.error-message');
+      const sentMessage = document.querySelector('.sent-message');
 
-      fetch(this.action, {
-        method: this.method,
-        body: new FormData(this),
+      loadingMessage.style.display = 'block'; // Show the loading message
+
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
         headers: {
           'Accept': 'application/json'
         }
       }).then(response => {
-        if (response.ok) {
-          // Show success message
-          document.querySelector('.loading').style.display = 'none';
-          document.querySelector('.sent-message').style.display = 'block';
-          this.reset();
+        return response.json();  // Parse JSON response
+      }).then(data => {
+        console.log('Response data:', data);  // Debugging log
+
+        if (data.ok) {
+          // Handle the success scenario
+          loadingMessage.style.display = 'none';
+          sentMessage.style.display = 'block';
+          form.reset(); // Reset the form
         } else {
+          // Handle errors
           throw new Error('Qualcosa è andato storto');
         }
       }).catch(error => {
-        // Show error message
-        document.querySelector('.loading').style.display = 'none';
-        document.querySelector('.error-message').innerText = error.message;
-        document.querySelector('.error-message').style.display = 'block';
+        // Handle the error
+        console.error('Error occurred:', error); // Debugging log
+        loadingMessage.style.display = 'none';
+        errorMessage.innerText = error.message;
+        errorMessage.style.display = 'block';
       });
     });
   </script>
