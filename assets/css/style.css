@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #black;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #black;
 }
 
 @media (max-width: 991px) {
@@ -736,7 +736,7 @@ section {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  padding-right: 10px;
+  /*padding-right: 10px;*/
   outline: none;
   cursor: pointer;
   text-align: left; /* Allinea il testo a sinistra */
@@ -1526,7 +1526,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #FFFFFF;
   text-align: left;
   padding: 15px;
   font-weight: 600;
