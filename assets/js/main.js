@@ -41,24 +41,49 @@
   }
 
   /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
+ * Navbar links active state on scroll
+ */
+let navbarlinks = select('#navbar .scrollto', true);
+
+const navbarlinksActive = () => {
+  let position = window.scrollY + 200; // posizione di scorrimento più un offset
+
+  // Aggiunge o rimuove la classe 'active' in base alla posizione dello scroll
+  navbarlinks.forEach(navbarlink => {
+    if (!navbarlink.hash) return; // Ignora i link senza hash
+    let section = select(navbarlink.hash);
+    if (!section) return; // Ignora i link senza sezione corrispondente
+
+    // Verifica se la posizione attuale è all'interno della sezione
+    if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+      navbarlink.classList.add('active'); // Aggiunge la classe 'active' se in questa sezione
+    } else {
+      navbarlink.classList.remove('active'); // Rimuove la classe 'active' se non in questa sezione
+    }
+  });
+};
+
+// Aggiunge un event listener per il caricamento della pagina
+window.addEventListener('load', () => {
+  // Controlla se ci troviamo su una pagina esterna
+  const currentPath = window.location.pathname.split('/').pop(); // Ottiene il nome del file corrente
+
+  navbarlinks.forEach(navbarlink => {
+    if (navbarlink.href.includes(currentPath)) {
+      navbarlink.classList.add('active'); // Aggiungi 'active' se il link corrisponde alla pagina attuale
+    } else {
+      navbarlink.classList.remove('active'); // Rimuove 'active' da altri link
+    }
+  });
+
+  // Se ci troviamo sulla homepage, chiama la funzione di attivazione
+  if (currentPath === 'index.html' || currentPath === '') {
+    navbarlinksActive(); // Assicurati di attivare la logica di scroll per le sezioni
   }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+});
+
+// Aggiunge un event listener per lo scroll
+onscroll(document, navbarlinksActive);
 
   /**
    * Scrolls to an element with header offset
