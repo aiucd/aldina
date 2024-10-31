@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #585F7F;
+  color: #005A8C;
   text-decoration: none;
 }
 
@@ -126,7 +126,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  margin-bottom: 20px !important; /* Aggiunge spazio sotto l'intestazione */
 }
+
 
 #header.header-scrolled, #header.header-inner-pages {
   background: white;
@@ -135,6 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo {
   font-size: 30px;
   margin: 0;
+  margin-bottom: 20px! important; /* Aggiunge spazio sotto il logo */
   padding: 0;
   line-height: 1;
   font-weight: 500;
@@ -142,12 +145,14 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+
 #header .logo a {
   color: #797F99;
 }
 
 #header .logo img {
   max-height: 70px;
+  margin-bottom: 20px! important;  
 }
 
 /*-----------------Immagini loghi up ------------*/
@@ -155,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo-img-small {
   width: auto; /* Puoi regolare questa dimensione in base alle tue esigenze */
   height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
+    margin-bottom: 20px! important;
 }
 
 /*-------------Centri, immagini loghi centri -----------------------------*/
@@ -185,6 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar ul {
   margin: 0;
+  margin-bottom: 20px;!important; /* Aggiunge spazio sotto il logo */
   padding: 0;
   display: flex;
   list-style: none;
@@ -201,8 +208,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  font-weight: 500;
-  color: #3F445A;
+  font-weight: 500; /* Peso normale per i link */
+  color: #3F445A; /* Colore originale per i link */
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -213,8 +220,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #585F7F;
+/* Hover e link attivi */
+.navbar a:hover, 
+.navbar .active, 
+.navbar .active:focus, 
+.navbar li:hover > a {
+  color: #585F7F; /* Colore per l'hover e l'attivo */
+  font-weight: bold; /* Rende il testo in grassetto */
+  text-decoration: underline; /* Sottolinea l'elemento attivo */
 }
 
 .navbar .getstarted {
@@ -229,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #31a9e1;
+  background: #585F7F; /* Colore di sfondo del pulsante hover */
 }
 
 .navbar .dropdown ul {
@@ -264,8 +277,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #585F7F;
+.navbar .dropdown ul a:hover, 
+.navbar .dropdown ul .active:hover, 
+.navbar .dropdown ul li:hover > a {
+  color: #585F7F; /* Colore per i link nel dropdown */
 }
 
 .navbar .dropdown:hover > ul {
@@ -294,6 +309,13 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+}
+
+/* Stili per l'elemento attivo */
+.navbar .active {
+    font-weight: bold; /* Rende il testo in grassetto */
+    color: #585F7F; /* Colore per l'elemento attivo */
+    text-decoration: underline; /* Sottolinea l'elemento attivo */
 }
 
 /**
@@ -406,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: auto;
-  background: #00000;
+  background: #fff;
 }
 
 #hero .container {
@@ -442,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: ##585F7F;
+  background: #585F7F;
 }
 
 #hero .btn-watch-video {
@@ -541,7 +563,7 @@ section {
 }
 
 .section-bg {
-  background-color: #00000;
+  background-color: #ffff;
 }
 
 .section-title {
@@ -784,7 +806,7 @@ section {
 
 @media (max-width: 1024px) {
   .why-us .content, .why-us .accordion-list {
-    padding-left: 0;
+    padding-left: 20;
     padding-right: 0;
   }
 }
@@ -807,6 +829,10 @@ section {
   }
 }
 
+.active {
+    font-weight: bold;
+    color: #333; /* Cambia il colore se vuoi */
+}
 
 /*--------------------------------------------------------------
 # Skills
@@ -1630,8 +1656,9 @@ section {
   padding: 15px 0;
   background: #f3f5fa;
   min-height: 40px;
-  margin-top: 72px;
+  margin-top: 100px !important; /* Aumentato da 72px a 100px per creare più spazio */
 }
+
 
 @media (max-width: 992px) {
   .breadcrumbs {
@@ -1663,6 +1690,25 @@ section {
   padding-right: 10px;
   color: #4668a2;
   content: "/";
+}
+
+/*--------------------------------------------------------------
+#Bibliografia
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Stile per la Bibliografia
+--------------------------------------------------------------*/
+.bibliografia {
+    font-size: 16px; /* Dimensione del font più grande */
+    line-height: 1.6; /* Aumenta lo spazio tra le righe */
+    margin-left: 2em; /* Indenta l'elenco */
+    padding-left: 1em; /* Aggiunge padding a sinistra */
+    list-style-type: disc; /* Utilizza punti elenco */
+    color: #333; /* Colore del testo */
+}
+
+.bibliografia .csl-entry {
+    margin-bottom: 10px; /* Spazio tra gli elementi */
 }
 
 /*--------------------------------------------------------------
