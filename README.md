@@ -1,6 +1,6 @@
 # ALDiNa · Archivi Letterari Digitali Nativi  
-🇮🇹 Progetto promosso da AIUCD in collaborazione con CLARIN-IT  
-🇬🇧 A project promoted by AIUCD in collaboration with CLARIN-IT
+ Progetto promosso da AIUCD in collaborazione con CLARIN-IT  
+ A project promoted by AIUCD in collaboration with CLARIN-IT
 
 ---
 
@@ -32,7 +32,7 @@ The project seeks to:
 
 ---
 
-## 📬 Contatti / Contact
+##  Contatti / Contact
 
 Hai un progetto, evento o pubblicazione da segnalare?  
 Do you want to suggest a project, event, or publication?
@@ -41,7 +41,7 @@ Do you want to suggest a project, event, or publication?
 
 ---
 
-## 👥 Credits
+##  Credits
 
 - **Logo** → [Martina Dello Buono](https://www.unibo.it/sitoweb/martina.dellobuono2)  
 - **Sito web** → [Mariangela Giglio](https://www.unibo.it/sitoweb/mariangela.giglio2)  
