@@ -45,7 +45,7 @@ Do you want to suggest a project, event, or publication?
 
 - **Logo** → [Martina Dello Buono](https://www.unibo.it/sitoweb/martina.dellobuono2)  
 - **Sito web** → [Mariangela Giglio](https://www.unibo.it/sitoweb/mariangela.giglio2)  
-- **Progetto AIUCD** → [aiucd.it](https://www.aiucd.it)
+- **AIUCD** → [aiucd.it](https://www.aiucd.it)
 
 ---
 
