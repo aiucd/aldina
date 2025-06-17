@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ALDiNa - Born-Digital Literary Archives</title>
+  <meta content="ALDiNa is a research project created to enhance the value of born-digital literary heritage" name="description">
+  <meta content="born digital, digital author archives, ALDiNa, AIUCD" name="keywords">
+
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Jost|Poppins" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ddd;
+    }
+    .btn.active {
+      background-color: #585f7f;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto">
+        <a href="https://www.aiucd.it/"><img src="assets/img/clients/client1o.png" class="logo-img-small" alt="AIUCD Logo"></a>
+        <a href="https://www.clarin.eu/"><img src="assets/img/clients/client2.png" class="logo-img-small" alt="Clarin Logo"></a>
+      </h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index-en.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="progetto-en.html">Project</a></li>
+          <li><a class="nav-link scrollto" href="persone-en.html">People</a></li>
+          <li><a class="nav-link scrollto" href="centri-en.html">Centres and Institutions</a></li>
+          <li><a class="nav-link scrollto" href="biblio-en.html">Bibliography</a></li>
+          <li><a class="nav-link scrollto active" href="notizie-en.html">News</a></li>
+          <li><a class="nav-link scrollto" href="contatti-en.html">Contact</a></li>
+          <li class="dropdown language-switch">
+            <a href="#"><span><i class="bi bi-translate"></i> Language</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="notizie.html" onclick="setLanguage('it')">🇮🇹 Italiano</a></li>
+              <li><a href="notizie-en.html" onclick="setLanguage('en')">🇬🇧 English</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index-en.html">Home</a></li>
+          <li>News</li>
+        </ol>
+        <h2>News</h2>
+      </div>
+    </section>
+
+    <!-- CONTENT FILTER + ENTRIES -->
+    <div class="container">
+      <div class="content">
+        <div id="myBtnContainer" class="mb-4">
+          <button class="btn active" onclick="filterSelection('all')">Show All</button>
+          <button class="btn" onclick="filterSelection('convegni')">Seminars and Conferences</button>
+          <button class="btn" onclick="filterSelection('pubblicazioni')">Publications</button>
+          <button class="btn" onclick="filterSelection('about')">Press Review</button>
+          <button class="btn" onclick="filterSelection('news')">News</button>
+        </div>
+
+      <div class="filter-content">
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>XIV convegno annuale AIUCD – June 11–13, 2025</h2>
+    <p>The 14th Annual Conference of the Italian Association for Digital Humanities and Digital Culture (AIUCD) will be held in Verona in June 2025, organized by the Digital Arena for Inclusive Humanities (DAIH) at the University of Verona. The conference theme will be “Diversity, Equity, and Inclusion: Challenges and Opportunities for Digital Humanities in the Age of Artificial Intelligence.”</p>
+    <p><a href="https://aiucd2025.dlls.univr.it/en-gb/">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Born-Digital Collections, Archives and Memory – April 2–4, 2025</h2>
+    <p>The international conference <i>Born-Digital Collections, Archives and Memory</i> offers an interdisciplinary dialogue on born-digital cultural heritage, exploring challenges and opportunities related to the preservation, archiving, and research of digital materials.</p>
+    <p><a href="https://www.sas.ac.uk/about-us/institutes-centres/digital-humanities-research-hub/events/born-digital-collections-archives-memory">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Don't save! Progetti digitali per il Centro di ricerca Franco Fortini – December 17, 2024</h2>
+    <p>The Franco Fortini Interdepartmental Research Center is hosting a seminar focused on ongoing Digital Humanities projects, particularly on the preservation and study of Fortini's born-digital archive (project F-LAB SOS-DH 2022/23), and the development of a platform for his bibliography (project F-CUR "BiGraFo" 2022/23).</p>
+    <p><a href="https://www.dfclam.unisi.it/it/eventi/17-dicembre-2024-ore-1530-dont-save-progetti-digitali-il-centro-di-ricerca-franco-fortini">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Gestione e conservazione degli archivi letterari digitali nativi – November 21, 2024</h2>
+    <p>Lucia Giagnolini (University of Bologna) will lead a seminar on managing and preserving born-digital literary archives. The event is part of the master's course in Italian Philology (Prof. Michelangelo Zaccarello).</p>
+    <p><a href="assets/img/giagnolini.jpg">Flyer</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Prospettive sul born-digital fra archivi pubblici e privati – November 20, 2024</h2>
+    <p>Lucia Giagnolini (University of Bologna) will present a seminar on archival management of born-digital documents. The session is part of the monographic course in Digital Humanities of the master's degree in Modern Literature (Prof. Emmanuela Carbé).</p>
+    <p><a href="https://www.dfclam.unisi.it/it/eventi/20-novembre-2024-ore-1800-seminario-di-informatica-umanistica-con-lucia-giagnolini">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni eventi news">
+  <div class="content">
+    <h2>IL FUTURO DELLA MEMORIA. DOVE COME COSA SALVARE – November 5, 2024</h2>
+    <p>A study day reflecting on the impact of digital technology on practices of archiving and transmitting literary texts and editorial knowledge. Organized by the Arnoldo and Alberto Mondadori Foundation in collaboration with the University of Bologna, the Manuscript Center of the University of Pavia, the Corriere della Sera Foundation, the Municipality of Milan, and BookCity Milano.</p>
+    <p><a href="https://www.fondazionemondadori.it/evento/il-futuro-della-memoria-dove-come-cosa-salvare/">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page eventi news">
+  <div class="content">
+    <h2>CFP Born-Digital Collections, Archives and Memory – April 2025</h2>
+    <p>Conference organized by The Digital Humanities Research Hub at the School of Advanced Study, University of London, in collaboration with Aarhus University, the British Library, and the Endangered Material Knowledge Programme at the British Museum.</p>
+    <p><a href="https://www.sas.ac.uk/news-events/events/born-digital-collections-archives-memory">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Tre giorni di convegno a Pavia – December 2023</h2>
+    <p>Article in <em>Il Giornale</em>, December 12, 2023.</p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Filologia digitale e autori: il convegno in Aula Magna – December 2023</h2>
+    <p>Article in <em>La Provincia Pavese</em>, December 12, 2023.</p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Bit manent? Sul convegno Carte immateriali. Filologia d’autore e testi nativi digitali – December 2023</h2>
+    <p>Article by Marco Brando in <em>Treccani Magazine</em>, December 27, 2023.</p>
+    <p><a href="https://www.treccani.it/magazine/lingua_italiana/articoli/scritto_e_parlato/bit-manent.html">Link to the article</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Le Carte Immateriali. Filologia D'autore E Testi Nativi Digitali – December 2023</h2>
+    <p>Conference held in Pavia, December 11–13, 2023.</p>
+    <p><a href="http://centromanoscritti.unipv.it/news-details/214-convegno-le-carte-immateriali-filologia-d-autore-e-testi-nativi-digitali-pavia-11-13-dicembre-2023.html#image-3">Link to the conference</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Il nuovo filologo deve essere anche un po’ ispettore – December 2023</h2>
+    <p>Article by Alessandro Gnocchi in <em>Il Giornale</em>, December 11, 2023.</p>
+    <p><a href="https://www.ilgiornale.it/news/letteratura/nuovo-filologo-dev-essere-anche-po-ispettore-2253933.html">Link to the article</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Cultura: a Pavia il convegno sugli archivi nativi digitali “Le carte immateriali” – December 2023</h2>
+    <p>Article in <em>RadioGold</em> about the conference on born-digital archives held in Pavia.</p>
+    <p><a href="https://radiogold.it/news-pavia/361912-cultura-pavia-convegno-sugli-archivi-nativi-digitali-carte-immateriali/">Link to the article</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>La lingua batte, Speciale in diretta da Più libri più liberi – December 2023</h2>
+    <p>Broadcast on <em>Rai Radio 3</em> during the special "La lingua batte" aired on December 10, 2023. Guests hosted by Paolo Di Paolo included:</p>
+    <ul>
+      <li>Giuseppe Antonelli, editor of the volume <em>"La vita delle parole. Il lessico dell'italiano tra storia e società"</em> (Il Mulino, 2023)</li>
+      <li>Graziano Graziani, author of <em>"Alice ner Paese dell'Anvedi"</em> (Tic edizioni), a Romanesco translation of "Alice in Wonderland"</li>
+      <li>Tiziana Montalbano, co-founder and communications manager at Parole O_Stili</li>
+      <li>Emanuela Piemontese, author of the essay <em>"Il diritto costituzionale di farsi capire"</em> (Carocci, 2023)</li>
+      <li>Francesca Reggiani, comedian, presenting her new book <em>"Spettacolare. Finché c'è attualità c'è satira"</em> (La Lepre, 2023)</li>
+      <li>Massimo Roscia, author of <em>"Errorario"</em> (Rai Libri, 2023)</li>
+      <li>Giovanni Solimine, with the essay <em>"Cervelli anfibi, orecchie e digitale"</em> (Aras Edizioni)</li>
+    </ul>
+    <p><a href="https://www.raiplaysound.it/audio/2023/12/La-lingua-batte-del-10122023-4f2ac514-5cac-41b6-b4ed-4b5cafdc7942.html">Link to the broadcast</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Filologia digitale, Lo studio delle carte immateriali – December 2023</h2>
+    <p>Interview with Giuseppe Antonelli on <em>Alphaville</em>, RSI Radio Svizzera Italiana, about the conference "Le carte immateriali. Filologia d’autore e testi nativi digitali" held on December 12, 2023.</p>
+    <p><a href="https://www.rsi.ch/rete-due/programmi/cultura/alphaville/Filologia-digitale--2015614.html">Link to the interview</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Digitale d’autore. Per non finire – November 2023</h2>
+    <p>Seminar with Isotta Piazza and Marco Sartor for the course in Contemporary Italian Literature (Isotta Piazza), Bachelor's Degree in Humanities, University of Parma, November 22, 2023.</p>
+    <p><a href="https://dusic.unipr.it/notizie/22-novembre-2023-digitale-dautore-non-finire">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>Non solo filologia, c’è vita quotidiana negli “scartafacci” raccolti da Maria Corti – November 2023</h2>
+    <p>Article by Enrico Negrotti in <em>Esametri & Cellule</em>, November 18, 2023.</p>
+    <p><a href="https://enriconegrotti.wordpress.com/tag/universita-di-pavia/">Link to the article</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Il libro digitale e le nuove prospettive editoriali – May 2023</h2>
+    <p>With Giuseppe Antonelli, Gino Roncaglia, Francesco Pecoraro, Emmanuela Carbé, Isotta Piazza. Moderated by Paola Italia. Part of the “Edizioni d’autore” seminar series curated by Stefania Baragetti and Virna Brigatti, University of Milan, May 3, 2023.</p>
+    <p><a href="https://www.youtube.com/watch?app=desktop&v=vJs8lwcMtTQ">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Old Issues and New Perspectives for Born-Digital Literary Archives – April 2023</h2>
+    <p>Seminar hosted by the Venice Centre for Digital and Public Humanities (VeDPH), Department of Humanities, Ca’ Foscari University of Venice, April 19, 2023.</p>
+    <p><a href="https://www.unive.it/data/agenda/1/72803">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>The Born-Digital Challenge in Private Archives: Research Perspectives and Archival Practices – October 2023</h2>
+    <p>Seminar held in Helsinki (October 4–5, 2023) organized by The Society of Swedish Literature in Finland (SLS) and The Finnish Literature Society (SKS). Speakers included Kristina Linnovaara (SLS), Emmanuela Carbé (University of Siena), Gábor Palkó (Eötvös Loránd University of Budapest), Callum McKean (British Library).</p>
+    <p><a href="https://www.youtube.com/watch?v=JZXYXxbOs7U&t=348s">Link to the seminar</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>Digitale d’autore – 2023</h2>
+    <p>By Emmanuela Carbé, 2023.</p>
+    <p><a href="https://books.fupress.com/catalogue/digitale-dautore/13065">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>Verso una "volontà d'archivio" digitale – June 2023</h2>
+    <p>Lucia Giagnolini in <i>La memoria digitale: forme del testo e organizzazione della conoscenza</i>. Proceedings of the 12th AIUCD Annual Conference, Siena, University of Siena, 2023, pp. 92–98.</p>
+    <p><a href="https://www.aiucd.it/atti-convegno-aiucd-2023/">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Contemporary Archives and New Issues – June 2022</h2>
+    <p>Seminar by Emmanuela Carbé for the project Italianische Philologie Digital, supported by “Frauen aufs Podium” and the Italian Cultural Institute of Hamburg, University of Kiel, June 15, 2022.</p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Filologia genetica ed ecosistema digitale – April 2022</h2>
+    <p>Paola Italia and Emmanuela Carbé, part of the permanent seminar cycle “A bridge between two worlds: historically inclined disciplines and DH”, Ca’ Foscari University of Venice, April 21, 2022.</p>
+    <p><a href="https://www.unive.it/data/agenda/2/57883">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page convegni">
+  <div class="content">
+    <h2>Dalla carta al computer: archivi e filologia d’autore nel nativo digitale – October 2021</h2>
+    <p>Online seminar by Emmanuela Carbé for the Chair of Italian Literature, University of Bern, Prof. Giovanna Cordibella.</p>
+    <p><a href="https://www.italiano.unibe.ch/unibe/portal/fak_historisch/dsl/italiano/content/e682043/e1135088/Dallacartaalcomputer_Carbe__ita.pdf">Flyer</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>Una presentazione degli archivi nati digitalmente conservati presso il Centro Manoscritti di Pavia – September 2022</h2>
+    <p>One of two episodes of “Sciarada” (RAI 5), curated by Giuseppe Antonelli, showcased the born-digital archives preserved at the Centro Manoscritti in Pavia. The episode aired on September 19, 2022, and included a commentary by Chiara Andreatta.</p>
+    <p><a href="https://www.raiplaysound.it/audio/2022/09/Sciarada-19092022-4f2ac514-5cac-41b6-b4ed-4b5cafdc7942.html">Link to the episode</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>L’edizione delle carte degli scrittori: l’archivio letterario incontra il (nativo) digitale – September 2021</h2>
+    <p>Tomasi, Francesca in <i>Biblioteche oggi</i> Trends 7, no. 1 (September 14, 2021).</p>
+    <p><a href="https://doi.org/10.3302/2421-3810-202101-081-1">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page about">
+  <div class="content">
+    <h2>ALDiNa: anche gli archivisti digitali hanno cominciato da piccoli… – February 2021</h2>
+    <p>Article by Giorgio Guzzetta in <i>Informatica Umanistica e Cultura Digitale: il blog dell'AIUCD</i>, February 2, 2021.</p>
+    <p><a href="https://infouma.hypotheses.org/413">Link to the article</a></p>
+  </div>
+</section>
+
+<section class="inner-page about workshop pubblicazioni">
+  <div class="content">
+    <h2>ALDiNa: Archivi Letterari Digitali Nativi – January 2021</h2>
+    <p>Workshop curated by Tiziana Mancinelli, Emmanuela Carbé, and Federico Boschetti. AIUCD 2021 – DH for Society: E-equality, Participation, Rights, and Values in the Digital Age.</p>
+    <p><a href="https://amsacta.unibo.it/id/eprint/6712/1/AIUCD2021_BOA-versione3A.pdf">Link to the Book of Abstracts</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>L'edizione delle carte degli scrittori: l'archivio letterario incontra il (nativo) digitale – 2021</h2>
+    <p>Article by Francesca Tomasi in <em>Biblioteche oggi</em>, 2021.</p>
+    <p><a href="http://www.bibliotecheoggi.it/trends/article/view/1285">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>L’organizzazione e la descrizione di un fondo nativo digitale: PAD e l’archivio di Franco Buffoni – 2020</h2>
+    <p>Contribution by P.G. Weston, P. Baldini, and L. Pusterla in C. Marras, M. Passarotti, G. Franzini, and E. Litta (eds.), <i>Atti del IX Convegno Annuale AIUCD. La svolta inevitabile</i>, Quaderni di Umanistica Digitale, 2020, pp. 273–277.</p>
+    <p><a href="https://doi.org/10.6092/unibo/amsacta/6316" target="_blank">Link to the conference proceedings</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>Digitale d’autore. Un Archivio Possibile – January 2018</h2>
+    <p>By Emmanuela Carbé in <em>Archivi Editoriali. Tra Storia Del Testo e Storia Del Libro</em>, January 1, 2018.</p>
+    <p><a href="https://www.academia.edu/37692678/Digitale_dautore_Un_archivio_possibile">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>Archivi digitali d’autore: ipotesi di lavoro – 2018</h2>
+    <p>Round table moderated by Stefano Allegrezza with Pierluigi Feliciati, Ernesto Belisario, Salvatore Flavio Vassallo, Emmanuela Carbé, Primo Baldini, and Paul Gabriele Weston, 2018.</p>
+    <p><a href="https://api.semanticscholar.org/CorpusID:191506333">Link</a></p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>Walking in My Shoes: A Case Study from a Born-Digital Archive – 2017</h2>
+    <p>By Emmanuela Carbé in <i>Digital Humanities 2016</i>. Extended Papers of the International Symposium on Digital Humanities, 2017, pp. 137–146.</p>
+  </div>
+</section>
+
+<section class="inner-page pubblicazioni">
+  <div class="content">
+    <h2>Gli archivi di persona nell’era digitale: il caso dell’archivio di Massimo Vannucci – 2016</h2>
+    <p>Allegrezza, Stefano, and Luca Gorgolini (eds.), in <i>Percorsi</i>, 2016.</p>
+  </div>
+</section>
+
+</div>
+</div>
+
+
+
+
+
+
+        <!-- Altre sezioni inner-page con classi diverse per i filtri -->
+
+      </main>
+
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>ALDiNa</h3>
+            <p>A project by <strong><a href="https://www.aiucd.it" target="_blank">AIUCD</a></strong> in collaboration with <strong><a href="https://www.clarin-it.it/it" target="_blank">Clarin-IT</a></strong></p>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Credits</h4>
+            <ul>
+              <li><strong>Logo: &nbsp;</strong><a href="https://www.unibo.it/sitoweb/martina.dellobuono2" target="_blank">Martina Dello Buono</a></li>
+              <li><strong>Website: &nbsp;</strong><a href="https://www.unibo.it/sitoweb/mariangela.giglio2" target="_blank">Mariangela Giglio</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Follow AIUCD</h4>
+            <div class="social-links mt-3">
+              <a href="https://www.twitter.com/aiucd" target="_blank"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/72025985" target="_blank"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.facebook.com/groups/aiucd" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://fedihum.org/@aiucd" target="_blank"><i class="bi bi-mastodon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/lang-redirect.js"></script>
+
+  <!-- ===== Script ====-->
+  <script>
+  filterSelection("all");
+
+  function filterSelection(c) {
+      var elements = document.getElementsByClassName("inner-page");
+      for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          if (c === "all") {
+              element.style.display = "block";
+          } else {
+              if (element.className.indexOf(c) > -1) {
+                  element.style.display = "block";
+              } else {
+                  element.style.display = "none";
+              }
+          }
+      }
+
+      var btns = document.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+          btns[i].classList.remove("active");
+      }
+      document.querySelector('.btn[onclick="filterSelection(\'' + c + '\')"]').classList.add("active");
+  }
+  </script>
+>
+</body>
+</html>

@@ -52,7 +52,13 @@
                 <li><a class="nav-link scrollto" href="biblio.html">Bibliografia</a></li>
                 <li><a class="nav-link scrollto" href="notizie.html">Notizie</a></li>
                 <li><a class="nav-link scrollto" href="contatti.html">Contatti</a></li>
-              </ul>
+                <li class="dropdown language-switch">
+                  <li class="dropdown language-switch">
+                    <a href="#"><span><i class="bi bi-translate"></i> Language</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="index.html" onclick="setLanguage('it')">🇮🇹 Italiano</a></li>
+                      <li><a href="index-en.html" onclick="setLanguage('en')">🇬🇧 English</a></li>
+                    </ul>
               <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
             <!-- .navbar -->
@@ -68,7 +74,7 @@
         <h1>ALDiNa - Archivi Letterari Digitali Nativi</h1>
         <h2>Un progetto di AIUCD con la collaborazione di CLARIN-IT</h2>
         <div class="d-flex justify-content-center justify-content-lg-start">
-          <a href="about.html" class="btn-get-started scrollto">Scopri di più</a>
+          <a href="progetto.html" class="btn-get-started scrollto">Scopri di più</a>
           <a href="https://www.youtube.com/watch?v=yFmqgbeEvik" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Guarda il video</span></a>
         </div>
       </div>
@@ -83,8 +89,8 @@
   <main id="main">
 
 
-   
-   
+
+
 
   </main><!-- End #main -->
 
@@ -139,6 +145,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/js/lang-redirect.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
