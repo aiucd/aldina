@@ -4,7 +4,7 @@
 
 ---
 
-## 🇮🇹 Descrizione del progetto
+## 🇮🇹  Descrizione del progetto
 
 **ALDiNa** è un’iniziativa dell’**Associazione per l’Informatica Umanistica e la Cultura Digitale (AIUCD)**, in collaborazione con **CLARIN-IT**, pensata per costruire una rete nazionale e multidisciplinare sul tema degli **archivi letterari nati digitalmente**.
 
@@ -18,7 +18,7 @@ Il progetto intende:
 
 ---
 
-## 🇬🇧 Project description
+## EN  Project description
 
 **ALDiNa** is an initiative by the **Italian Association for Digital Humanities and Digital Culture (AIUCD)** in collaboration with **CLARIN-IT**. It aims to build a national, multidisciplinary network focused on **born-digital literary archives**.
 
